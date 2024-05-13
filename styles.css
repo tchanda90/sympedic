@@ -1,0 +1,128 @@
+body {
+    background-color: #fffff; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+.img-brand {
+    height:90px;
+    width:130px
+}
+
+
+
+.carousel-item img {
+    height: 50vh; /* Set the height to 50% of the viewport height */
+}
+
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between grid items */
+    margin: 20px;
+}
+
+/* Grid item */
+.product-item {
+    border: 1px solid #ddd; /* Border for each grid item */
+    padding: 20px; /* Padding around each grid item */
+    text-align: center; /* Center-align content */
+    height: 100%
+}
+
+/* Product image */
+.product-image {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: 50%; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Spacing below image */
+}
+
+/* Style for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Style for the dropdown button */
+.dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 50vh;
+}
+
+/* Style for the dropdown arrow */
+.dropdown::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Style for dropdown options */
+.dropdown select option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style for hover effect on dropdown options */
+.dropdown select option:hover {
+    background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown {
+      width: 90%; /* Full width on small screens */
+    }
+    .dropdown select {
+        width: 100%;
+    }
+}
+
+
+/* Style for the container */
+.testimonials-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Adjust spacing between testimonials */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Style for each testimonial */
+.testimonial {
+    flex: 0 0 auto; /* Prevent testimonials from stretching */
+    max-width: 300px; /* Set minimum width for each testimonial */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for testimonial text */
+.testimonial p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
